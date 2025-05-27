@@ -34,6 +34,27 @@
         .nav-links a:hover {
             color: #ddd;
         }
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .title-text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .banner {
+            flex: 1;
+            min-height: 200px;
+            background-color: #444;
+            margin-left: 2rem;
+        }
     </style>
 </head>
 <body>
@@ -44,7 +65,14 @@
             <li><a href="#code">Code</a></li>
         </ul>
     </nav>
-    <h1 style="text-align: center; color: white;">STED-FM</h1>
-    <span style="text-align: center; color: white;">A Self-Supervised Foundation Model for Robust and Generalizable Representation Learning in STED Microscopy</span>
+    <div class="title">
+        <div class="title-text">
+            <h1 style="text-align: left; color: white;">STED-FM</h1>
+            <span style="text-align: left; color: white;">A Self-Supervised Foundation Model for Robust and Generalizable Representation Learning in STED Microscopy</span>
+        </div>
+        <div class="banner">
+            <!-- Banner content will go here -->
+        </div>
+    </div>
 </body>
 </html> 
