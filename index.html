@@ -55,6 +55,37 @@
             background-color: #444;
             margin-left: 2rem;
         }
+
+        .notable-results {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .pdf-container {
+            display: flex;
+            gap: 2rem;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+
+        .pdf-item {
+            flex: 1;
+            background-color: #444;
+            min-height: 300px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        .pdf-item embed {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
     </style>
 </head>
 <body>
@@ -72,6 +103,21 @@
         </div>
         <div class="banner">
             <!-- Banner content will go here -->
+        </div>
+    </div>
+
+    <div class="notable-results">
+        <h2 style="color: white;">Notable Results</h2>
+        <div class="pdf-container">
+            <div class="pdf-item">
+                <embed src="images/figure1.pdf" type="application/pdf">
+            </div>
+            <div class="pdf-item">
+                <embed src="images/pdf2.pdf" type="application/pdf">
+            </div>
+            <div class="pdf-item">
+                <embed src="images/pdf3.pdf" type="application/pdf">
+            </div>
         </div>
     </div>
 </body>
