@@ -4,107 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STED-FM</title>
-    <style>
-        body {
-            background-color: #343434;
-        }
-
-        .navbar {
-            background-color: #333;
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-            border-bottom: 1px solid #555;
-        }
-        
-        .nav-links {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 2rem;
-        }
-        
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.1rem;
-        }
-        
-        .nav-links a:hover {
-            color: #ddd;
-        }
-
-        .title {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            padding: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .title-text {
-            flex: 1;
-            text-align: left;
-        }
-
-        .banner {
-            flex: 1;
-            min-height: 200px;
-            background-color: #444;
-            margin-left: 2rem;
-        }
-
-        .notable-results {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-        }
-
-        .pdf-container {
-            display: flex;
-            gap: 2rem;
-            justify-content: space-between;
-            margin-top: 2rem;
-            width: 100%;
-        }
-
-        .pdf-item {
-            flex: 1;
-            background-color: #444;
-            min-height: 600px;
-            height: 80vh;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            overflow: hidden;
-        }
-
-        .pdf-item embed {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        .results {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            padding: 2rem;
-            background-color: white;
-        }
-
-        .results img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            background-color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav class="navbar">
@@ -114,10 +14,11 @@
             <li><a href="https://github.com/FLClab/STED-FM"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="width: 20px; height: 20px; vertical-align: middle; margin-left: 5px;"> Code</a></li>
         </ul>
     </nav>
-    <div class="title">
-        <div class="title-text">
-            <h1 style="text-align: center; color: white;">STED-FM</h1>
-            <span style="text-align: center; color: white;">A Self-Supervised Foundation Model for Robust and Generalizable Representation Learning in STED Microscopy</span>
+    <div class="banner">
+        <img src="images/neuron.png" alt="Neuron Banner">
+        <div class="banner-content">
+            <h1>STED-FM</h1>
+            <span>A Self-Supervised Foundation Model for Robust and Generalizable Representation Learning in STED Microscopy</span>
         </div>
     </div>
     <div class="results">
