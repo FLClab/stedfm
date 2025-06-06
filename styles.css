@@ -78,11 +78,13 @@ body {
 }
 
 .results img {
-    max-width: 75%;
+    max-width: 50%;
+    width: 100%;
     height: auto;
     border-radius: 8px;
     padding: 10px;
     background-color: white;
+    object-fit: contain;
 }
 
 .abstract {
