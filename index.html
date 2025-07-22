@@ -8,10 +8,16 @@
 </head>
 <body>
     <nav class="navbar">
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="https://www.biorxiv.org/content/10.1101/2025.06.06.656993v1">Paper</a></li>
             <li><a href="https://github.com/FLClab/STED-FM"><img src="images/github-mark/github-mark-white.png" alt="GitHub" style="width: 20px; height: 20px; margin-bottom: 4px; vertical-align: middle;"> Code</a></li>
+            <a href="https://colab.research.google.com/github/FLClab/STED-FM/blob/main/notebooks/stedfm_example.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
         </ul>
     </nav>
     <div class="banner">
@@ -101,7 +107,14 @@
                 });
             });
         });
+
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active'); // Toggle the active class to show/hide the menu
+        });
     </script>
 
 </body>
-</html> 
+</html>
