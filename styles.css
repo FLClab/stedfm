@@ -204,6 +204,13 @@ body {
     box-shadow: 0 2px 8px rgba(74,144,226,0.08);
 }
 
+.dataset-item .download-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-self: flex-end;
+}
+
 .dataset-item a:hover {
     background: #357ab8;
     color: #e0e0e0;
